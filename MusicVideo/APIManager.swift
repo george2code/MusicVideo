@@ -18,7 +18,8 @@ class APIManager {
 //        let session = URLSession.shared
         let url = URL(string: urlString)!
         
-        let request = URLRequest(url: url);
+        var request = URLRequest(url: url);
+        request.httpMethod = "POST"
         
         
         let task = session.dataTask(with: request as URLRequest) {
@@ -31,9 +32,30 @@ class APIManager {
                 })
                 
             } else {
-                DispatchQueue.main.async(execute: {
-                    completion("NSURLSession successful")
-                })
+                
+                do {
+                    
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: AnyObject]
+                    
+                    print(json)
+            
+                    
+                    DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+                        completion("JSONSerialization Successful")
+                    }
+                    
+                    
+                } catch {
+                    DispatchQueue.main.async(execute: {
+                        completion("error in JSONSerialization")
+                    })
+                }
+                
+                
+                
+//                DispatchQueue.main.async(execute: {
+//                    completion("NSURLSession successful")
+//                })
             }
             
             

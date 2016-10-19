@@ -16,7 +16,20 @@ class ViewController: UIViewController {
         
         //Call Api
         let api = APIManager()
-        api.loadData(urlString: "https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json",
+        
+        
+       
+//        let str = String(format: "%@/rest/Auth/loginSync?username=%@&password=%@&identifier=%@",
+//                         "http://testfsh.friendly-tech.com:9993/fsh",
+//                         "5029@gmail.com",
+//                         "qwerty",
+//                         UIDevice.current.identifierForVendor!.uuidString)
+        
+        let str = "https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json"
+        
+        print(str)
+        
+        api.loadData(urlString: str,
                      completion: didLoadData)
         
         
