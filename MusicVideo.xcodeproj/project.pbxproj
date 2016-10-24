@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A628A18A1DBE42D8009E75C9 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A628A1891DBE42D8009E75C9 /* MusicVideo.swift */; };
 		DAFBACFA1DB65B9D00EBE880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBACF91DB65B9D00EBE880 /* AppDelegate.swift */; };
 		DAFBACFC1DB65B9D00EBE880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBACFB1DB65B9D00EBE880 /* ViewController.swift */; };
 		DAFBACFF1DB65B9D00EBE880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBACFD1DB65B9D00EBE880 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A628A1891DBE42D8009E75C9 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 		DAFBACF61DB65B9D00EBE880 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFBACF91DB65B9D00EBE880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFBACFB1DB65B9D00EBE880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DAFBAD0F1DB66A0200EBE880 /* APIManager.swift */,
+				A628A1891DBE42D8009E75C9 /* MusicVideo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				DAFBAD101DB66A0200EBE880 /* APIManager.swift in Sources */,
 				DAFBACFC1DB65B9D00EBE880 /* ViewController.swift in Sources */,
+				A628A18A1DBE42D8009E75C9 /* MusicVideo.swift in Sources */,
 				DAFBACFA1DB65B9D00EBE880 /* AppDelegate.swift in Sources */,
 				DAFBAD141DB7A30600EBE880 /* Constants.swift in Sources */,
 			);
@@ -353,6 +357,7 @@
 				DAFBAD0A1DB65B9D00EBE880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
