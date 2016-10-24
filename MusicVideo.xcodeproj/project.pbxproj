@@ -13,6 +13,7 @@
 		DAFBAD011DB65B9D00EBE880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFBAD001DB65B9D00EBE880 /* Assets.xcassets */; };
 		DAFBAD041DB65B9D00EBE880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBAD021DB65B9D00EBE880 /* LaunchScreen.storyboard */; };
 		DAFBAD101DB66A0200EBE880 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBAD0F1DB66A0200EBE880 /* APIManager.swift */; };
+		DAFBAD141DB7A30600EBE880 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBAD131DB7A30600EBE880 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DAFBAD031DB65B9D00EBE880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFBAD051DB65B9D00EBE880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFBAD0F1DB66A0200EBE880 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DAFBAD131DB7A30600EBE880 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		DAFBACF81DB65B9D00EBE880 /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				DAFBAD121DB7A2D100EBE880 /* Utils */,
 				DAFBAD0E1DB664DF00EBE880 /* Supporting Files */,
 				DAFBAD0B1DB6645D00EBE880 /* Model */,
 				DAFBAD0C1DB6647A00EBE880 /* Controller */,
@@ -105,6 +108,14 @@
 			children = (
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		DAFBAD121DB7A2D100EBE880 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBAD131DB7A30600EBE880 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				DAFBAD101DB66A0200EBE880 /* APIManager.swift in Sources */,
 				DAFBACFC1DB65B9D00EBE880 /* ViewController.swift in Sources */,
 				DAFBACFA1DB65B9D00EBE880 /* AppDelegate.swift in Sources */,
+				DAFBAD141DB7A30600EBE880 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
